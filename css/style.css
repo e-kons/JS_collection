@@ -6,7 +6,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: inherit;}
 nav,footer,header,aside{display: block;}
 input,button,textarea{font-family: inherit;} input::-ms-clear{display: none;}
 button{background: none; cursor: pointer;} button::-moz-focus-inner{padding: 0;border: 0;}
-a, a:visited, a:hover{text-decoration: none; color: #000;}
+a, a:visited, a:hover{text-decoration: none}
 :focus,:active{outline: none;} a:focus,a:active{outline: none;}
 *,*:before,*:after{-moz-box-sizing: border-box; -webkit-box-sizing: border-box; 
 box-sizing: border-box;}
@@ -21,25 +21,28 @@ box-sizing: border-box;}
 }
 body{
     background: dimgray;
-
+    color: black;
     font-family: Arial, serif;
     font-size: 28px;
     text-transform: uppercase;
-    color: white;
     text-align: center;
     padding: 20px;
 }
 /*------------------------------ STYLE ------------------------------*/
+
+.content{
+    border: 3px solid #4d4d4d;
+    border-radius: 35px;
+    background: rgb(255, 255, 255);
+    padding: 20px 50px;
+}
 
 .title{
     font-size: 56px;
     margin: 60px 0 ;
     transition: 0.3s;
 }
-.title:hover{
-    color: rgb(238, 222, 68);
-    transition: 0.3s;
-}
+
 
 
 .links{
@@ -48,10 +51,10 @@ body{
     justify-content: center;
 }
 .links__item{
-    color: white;
+    color: #000;
     border: 3px solid #4d4d4d;
     border-radius: 35px;
-    background: rgba(255, 255, 255, 0.45);
+    background: rgba(105, 105, 105, 0.34);
     padding: 20px 30px;
     margin: 5px 5px 0 0;
     transition: 0.3s;
@@ -61,6 +64,7 @@ body{
     background: rgba(238, 222, 68, 0.99);
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.24);
     transition: 0.3s;
+    scale: 105%;
 }
 
 
